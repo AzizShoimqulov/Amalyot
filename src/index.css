@@ -1,0 +1,131 @@
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #faf0f0d2;
+  color: #000000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: white;
+}
+
+.toggle-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.dark-toggle {
+  background: none;
+  margin-top: 10px;
+  margin-right: 50px;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.dark-toggle:hover {
+  transform: scale(1.2);
+}
+
+.toggle-icon {
+  pointer-events: none;
+}
+
+
+.title {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.title.dark-theme {
+  color: #f0f0f0;
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-input {
+  padding: 0.5rem 1rem;
+  border: 2px solid #07200c;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 250px;
+}
+input:focus{
+   border-color: #00ffc8;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 0 3px #ffffff; 
+}
+.search-input {
+  background-color: white;
+}
+
+.dark-theme .search-input {
+  background-color: #555;
+  border-color: #888;
+  color: white;
+}
+
+
+.btn {
+  background-color: #02f727;
+  color: white;
+  padding: 0.67rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  gap: 1.5rem;
+  padding:2rem;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.img-wrapper {
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
